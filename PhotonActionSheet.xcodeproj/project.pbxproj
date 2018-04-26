@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EE8264CCFFC4580B8477CAF /* libPods-PhotonActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F0650EF446A89B2B9183E7 /* libPods-PhotonActionSheet.a */; };
+		DA4D35CD20900BFD00F258A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35CC20900BFD00F258A6 /* AppDelegate.m */; };
+		DA4D35D020900BFD00F258A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35CF20900BFD00F258A6 /* ViewController.m */; };
+		DA4D35D320900BFD00F258A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4D35D120900BFD00F258A6 /* Main.storyboard */; };
+		DA4D35D520900C0900F258A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4D35D420900C0900F258A6 /* Assets.xcassets */; };
+		DA4D35D820900C0900F258A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4D35D620900C0900F258A6 /* LaunchScreen.storyboard */; };
+		DA4D35DB20900C0900F258A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35DA20900C0900F258A6 /* main.m */; };
+		DA4D35E520900C0900F258A6 /* PhotonActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35E420900C0900F258A6 /* PhotonActionSheetTests.m */; };
+		DA4D35F020900C0A00F258A6 /* PhotonActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35EF20900C0A00F258A6 /* PhotonActionSheetUITests.m */; };
+		DA4D360020900D5A00F258A6 /* PhotonActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35FF20900D5A00F258A6 /* PhotonActionSheet.m */; };
+		DA4D360620900DAF00F258A6 /* PhotonActionSheetAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D360520900DAF00F258A6 /* PhotonActionSheetAnimator.m */; };
+		DA4D36B9209098E900F258A6 /* UIColor+PhotonActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D36B6209098E900F258A6 /* UIColor+PhotonActionSheet.m */; };
+		DA4D36BA209098E900F258A6 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D36B8209098E900F258A6 /* UIImage+ImageEffects.m */; };
+		DA4D36BD209152FA00F258A6 /* PhotonActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D36BC209152FA00F258A6 /* PhotonActionSheetController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA4D35E120900C0900F258A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4D35C020900BFD00F258A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4D35C720900BFD00F258A6;
+			remoteInfo = PhotonActionSheet;
+		};
+		DA4D35EC20900C0A00F258A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4D35C020900BFD00F258A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4D35C720900BFD00F258A6;
+			remoteInfo = PhotonActionSheet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12F0650EF446A89B2B9183E7 /* libPods-PhotonActionSheet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotonActionSheet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D40ED225AACA5D34D08648 /* Pods-PhotonActionSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotonActionSheet.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotonActionSheet/Pods-PhotonActionSheet.release.xcconfig"; sourceTree = "<group>"; };
+		CAD7E5B221FE6B00BD7C2D29 /* Pods-PhotonActionSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotonActionSheet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotonActionSheet/Pods-PhotonActionSheet.debug.xcconfig"; sourceTree = "<group>"; };
+		DA4D35C820900BFD00F258A6 /* PhotonActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotonActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4D35CB20900BFD00F258A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA4D35CC20900BFD00F258A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA4D35CE20900BFD00F258A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DA4D35CF20900BFD00F258A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DA4D35D220900BFD00F258A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA4D35D420900C0900F258A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA4D35D720900C0900F258A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA4D35D920900C0900F258A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4D35DA20900C0900F258A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA4D35E020900C0900F258A6 /* PhotonActionSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotonActionSheetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4D35E420900C0900F258A6 /* PhotonActionSheetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetTests.m; sourceTree = "<group>"; };
+		DA4D35E620900C0900F258A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4D35EB20900C0A00F258A6 /* PhotonActionSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotonActionSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4D35EF20900C0A00F258A6 /* PhotonActionSheetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetUITests.m; sourceTree = "<group>"; };
+		DA4D35F120900C0A00F258A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4D35FE20900D5A00F258A6 /* PhotonActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotonActionSheet.h; sourceTree = "<group>"; };
+		DA4D35FF20900D5A00F258A6 /* PhotonActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheet.m; sourceTree = "<group>"; };
+		DA4D360420900DAF00F258A6 /* PhotonActionSheetAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotonActionSheetAnimator.h; sourceTree = "<group>"; };
+		DA4D360520900DAF00F258A6 /* PhotonActionSheetAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetAnimator.m; sourceTree = "<group>"; };
+		DA4D36B5209098E900F258A6 /* UIColor+PhotonActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PhotonActionSheet.h"; sourceTree = "<group>"; };
+		DA4D36B6209098E900F258A6 /* UIColor+PhotonActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PhotonActionSheet.m"; sourceTree = "<group>"; };
+		DA4D36B7209098E900F258A6 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		DA4D36B8209098E900F258A6 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		DA4D36BB209152FA00F258A6 /* PhotonActionSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotonActionSheetController.h; sourceTree = "<group>"; };
+		DA4D36BC209152FA00F258A6 /* PhotonActionSheetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA4D35C520900BFD00F258A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE8264CCFFC4580B8477CAF /* libPods-PhotonActionSheet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D35DD20900C0900F258A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D35E820900C0A00F258A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F8E92E2F3949ABBB0ACE5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12F0650EF446A89B2B9183E7 /* libPods-PhotonActionSheet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC34457CA425F25EF47A4F89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAD7E5B221FE6B00BD7C2D29 /* Pods-PhotonActionSheet.debug.xcconfig */,
+				43D40ED225AACA5D34D08648 /* Pods-PhotonActionSheet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA4D35BF20900BFD00F258A6 = {
+			isa = PBXGroup;
+			children = (
+				DA4D35CA20900BFD00F258A6 /* PhotonActionSheet */,
+				DA4D35E320900C0900F258A6 /* PhotonActionSheetTests */,
+				DA4D35EE20900C0A00F258A6 /* PhotonActionSheetUITests */,
+				DA4D35C920900BFD00F258A6 /* Products */,
+				CC34457CA425F25EF47A4F89 /* Pods */,
+				15F8E92E2F3949ABBB0ACE5E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA4D35C920900BFD00F258A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D35C820900BFD00F258A6 /* PhotonActionSheet.app */,
+				DA4D35E020900C0900F258A6 /* PhotonActionSheetTests.xctest */,
+				DA4D35EB20900C0A00F258A6 /* PhotonActionSheetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA4D35CA20900BFD00F258A6 /* PhotonActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D35CB20900BFD00F258A6 /* AppDelegate.h */,
+				DA4D35CC20900BFD00F258A6 /* AppDelegate.m */,
+				DA4D35CE20900BFD00F258A6 /* ViewController.h */,
+				DA4D35CF20900BFD00F258A6 /* ViewController.m */,
+				DA4D35D120900BFD00F258A6 /* Main.storyboard */,
+				DA4D35D420900C0900F258A6 /* Assets.xcassets */,
+				DA4D35D620900C0900F258A6 /* LaunchScreen.storyboard */,
+				DA4D35D920900C0900F258A6 /* Info.plist */,
+				DA4D35DA20900C0900F258A6 /* main.m */,
+				DA4D35FD20900C3E00F258A6 /* PhotonActionSheet */,
+			);
+			path = PhotonActionSheet;
+			sourceTree = "<group>";
+		};
+		DA4D35E320900C0900F258A6 /* PhotonActionSheetTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D35E420900C0900F258A6 /* PhotonActionSheetTests.m */,
+				DA4D35E620900C0900F258A6 /* Info.plist */,
+			);
+			path = PhotonActionSheetTests;
+			sourceTree = "<group>";
+		};
+		DA4D35EE20900C0A00F258A6 /* PhotonActionSheetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D35EF20900C0A00F258A6 /* PhotonActionSheetUITests.m */,
+				DA4D35F120900C0A00F258A6 /* Info.plist */,
+			);
+			path = PhotonActionSheetUITests;
+			sourceTree = "<group>";
+		};
+		DA4D35FD20900C3E00F258A6 /* PhotonActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D36BB209152FA00F258A6 /* PhotonActionSheetController.h */,
+				DA4D36BC209152FA00F258A6 /* PhotonActionSheetController.m */,
+				DA4D35FE20900D5A00F258A6 /* PhotonActionSheet.h */,
+				DA4D35FF20900D5A00F258A6 /* PhotonActionSheet.m */,
+				DA4D360420900DAF00F258A6 /* PhotonActionSheetAnimator.h */,
+				DA4D360520900DAF00F258A6 /* PhotonActionSheetAnimator.m */,
+				DA4D36B4209098E900F258A6 /* Category */,
+			);
+			path = PhotonActionSheet;
+			sourceTree = "<group>";
+		};
+		DA4D36B4209098E900F258A6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D36B5209098E900F258A6 /* UIColor+PhotonActionSheet.h */,
+				DA4D36B6209098E900F258A6 /* UIColor+PhotonActionSheet.m */,
+				DA4D36B7209098E900F258A6 /* UIImage+ImageEffects.h */,
+				DA4D36B8209098E900F258A6 /* UIImage+ImageEffects.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA4D35C720900BFD00F258A6 /* PhotonActionSheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4D35F420900C0A00F258A6 /* Build configuration list for PBXNativeTarget "PhotonActionSheet" */;
+			buildPhases = (
+				8F836E69D8E24C8B08C49951 /* [CP] Check Pods Manifest.lock */,
+				DA4D35C420900BFD00F258A6 /* Sources */,
+				DA4D35C520900BFD00F258A6 /* Frameworks */,
+				DA4D35C620900BFD00F258A6 /* Resources */,
+				762A104EBAE8A485BFB74D4B /* [CP] Embed Pods Frameworks */,
+				68B64CB0C1ADD17C66161400 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotonActionSheet;
+			productName = PhotonActionSheet;
+			productReference = DA4D35C820900BFD00F258A6 /* PhotonActionSheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA4D35DF20900C0900F258A6 /* PhotonActionSheetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4D35F720900C0A00F258A6 /* Build configuration list for PBXNativeTarget "PhotonActionSheetTests" */;
+			buildPhases = (
+				DA4D35DC20900C0900F258A6 /* Sources */,
+				DA4D35DD20900C0900F258A6 /* Frameworks */,
+				DA4D35DE20900C0900F258A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4D35E220900C0900F258A6 /* PBXTargetDependency */,
+			);
+			name = PhotonActionSheetTests;
+			productName = PhotonActionSheetTests;
+			productReference = DA4D35E020900C0900F258A6 /* PhotonActionSheetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA4D35EA20900C0A00F258A6 /* PhotonActionSheetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4D35FA20900C0A00F258A6 /* Build configuration list for PBXNativeTarget "PhotonActionSheetUITests" */;
+			buildPhases = (
+				DA4D35E720900C0A00F258A6 /* Sources */,
+				DA4D35E820900C0A00F258A6 /* Frameworks */,
+				DA4D35E920900C0A00F258A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4D35ED20900C0A00F258A6 /* PBXTargetDependency */,
+			);
+			name = PhotonActionSheetUITests;
+			productName = PhotonActionSheetUITests;
+			productReference = DA4D35EB20900C0A00F258A6 /* PhotonActionSheetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA4D35C020900BFD00F258A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = bluestone;
+				TargetAttributes = {
+					DA4D35C720900BFD00F258A6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					DA4D35DF20900C0900F258A6 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DA4D35C720900BFD00F258A6;
+					};
+					DA4D35EA20900C0A00F258A6 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DA4D35C720900BFD00F258A6;
+					};
+				};
+			};
+			buildConfigurationList = DA4D35C320900BFD00F258A6 /* Build configuration list for PBXProject "PhotonActionSheet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA4D35BF20900BFD00F258A6;
+			productRefGroup = DA4D35C920900BFD00F258A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA4D35C720900BFD00F258A6 /* PhotonActionSheet */,
+				DA4D35DF20900C0900F258A6 /* PhotonActionSheetTests */,
+				DA4D35EA20900C0A00F258A6 /* PhotonActionSheetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA4D35C620900BFD00F258A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4D35D820900C0900F258A6 /* LaunchScreen.storyboard in Resources */,
+				DA4D35D520900C0900F258A6 /* Assets.xcassets in Resources */,
+				DA4D35D320900BFD00F258A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D35DE20900C0900F258A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D35E920900C0A00F258A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68B64CB0C1ADD17C66161400 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotonActionSheet/Pods-PhotonActionSheet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		762A104EBAE8A485BFB74D4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotonActionSheet/Pods-PhotonActionSheet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F836E69D8E24C8B08C49951 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotonActionSheet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA4D35C420900BFD00F258A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4D35D020900BFD00F258A6 /* ViewController.m in Sources */,
+				DA4D36B9209098E900F258A6 /* UIColor+PhotonActionSheet.m in Sources */,
+				DA4D36BA209098E900F258A6 /* UIImage+ImageEffects.m in Sources */,
+				DA4D36BD209152FA00F258A6 /* PhotonActionSheetController.m in Sources */,
+				DA4D360020900D5A00F258A6 /* PhotonActionSheet.m in Sources */,
+				DA4D35DB20900C0900F258A6 /* main.m in Sources */,
+				DA4D360620900DAF00F258A6 /* PhotonActionSheetAnimator.m in Sources */,
+				DA4D35CD20900BFD00F258A6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D35DC20900C0900F258A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4D35E520900C0900F258A6 /* PhotonActionSheetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D35E720900C0A00F258A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4D35F020900C0A00F258A6 /* PhotonActionSheetUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA4D35E220900C0900F258A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4D35C720900BFD00F258A6 /* PhotonActionSheet */;
+			targetProxy = DA4D35E120900C0900F258A6 /* PBXContainerItemProxy */;
+		};
+		DA4D35ED20900C0A00F258A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4D35C720900BFD00F258A6 /* PhotonActionSheet */;
+			targetProxy = DA4D35EC20900C0A00F258A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA4D35D120900BFD00F258A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4D35D220900BFD00F258A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA4D35D620900C0900F258A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4D35D720900C0900F258A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA4D35F220900C0A00F258A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA4D35F320900C0A00F258A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA4D35F520900C0A00F258A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD7E5B221FE6B00BD7C2D29 /* Pods-PhotonActionSheet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonActionSheet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.PhotonActionSheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA4D35F620900C0A00F258A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D40ED225AACA5D34D08648 /* Pods-PhotonActionSheet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonActionSheet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.PhotonActionSheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA4D35F820900C0A00F258A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonActionSheetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.PhotonActionSheetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotonActionSheet.app/PhotonActionSheet";
+			};
+			name = Debug;
+		};
+		DA4D35F920900C0A00F258A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonActionSheetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.PhotonActionSheetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotonActionSheet.app/PhotonActionSheet";
+			};
+			name = Release;
+		};
+		DA4D35FB20900C0A00F258A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonActionSheetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.PhotonActionSheetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotonActionSheet;
+			};
+			name = Debug;
+		};
+		DA4D35FC20900C0A00F258A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotonActionSheetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.PhotonActionSheetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotonActionSheet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA4D35C320900BFD00F258A6 /* Build configuration list for PBXProject "PhotonActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D35F220900C0A00F258A6 /* Debug */,
+				DA4D35F320900C0A00F258A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4D35F420900C0A00F258A6 /* Build configuration list for PBXNativeTarget "PhotonActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D35F520900C0A00F258A6 /* Debug */,
+				DA4D35F620900C0A00F258A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4D35F720900C0A00F258A6 /* Build configuration list for PBXNativeTarget "PhotonActionSheetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D35F820900C0A00F258A6 /* Debug */,
+				DA4D35F920900C0A00F258A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4D35FA20900C0A00F258A6 /* Build configuration list for PBXNativeTarget "PhotonActionSheetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D35FB20900C0A00F258A6 /* Debug */,
+				DA4D35FC20900C0A00F258A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA4D35C020900BFD00F258A6 /* Project object */;
+}
