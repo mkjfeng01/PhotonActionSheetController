@@ -17,6 +17,9 @@
 #import "Masonry.h"
 #endif
 
+static NSString * const PHOTONACTIONSHEET_IDENTIFIER_EMPTYHEADER = @"EmptyHeader";
+static NSString * const PHOTONACTIONSHEET_IDENTIFIER_SEPARATORSECTIONHEADER = @"SeparatorSectionHeader";
+
 static CGFloat const MaxWidth = 414;
 static CGFloat const Padding = 10;
 static CGFloat const HeaderFooterHeight = 20;
@@ -88,11 +91,13 @@ static CGFloat const TablePadding = 6;
     [super viewDidLoad];
     
     if (self.style == PhotonActionSheetPresentationCentered) {
+        [self applyBackgroundBlur];
         self.tintColor = [UIColor colorWithHex:0x0a84ff];
     }
     
     [self.view addGestureRecognizer:self.tapRecognizer];
     [self.view addSubview:self.tableView];
+    
     self.view.accessibilityIdentifier = @"Action Sheet";
     
     if (!self.popoverPresentationController) {
@@ -140,7 +145,7 @@ static CGFloat const TablePadding = 6;
     [super viewDidLayoutSubviews];
     
     CGFloat maxHeight = self.view.frame.size.height - (self.showCloseButton ? CloseButtonHeight : 0);
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(MIN(self.tableView.contentSize.height, maxHeight * 0.8));
     }];
     
@@ -170,6 +175,10 @@ static CGFloat const TablePadding = 6;
     if (self.traitCollection.verticalSizeClass != previousTraitCollection.verticalSizeClass || self.traitCollection.horizontalSizeClass != previousTraitCollection.horizontalSizeClass) {
         [self updateViewConstraints];
     }
+}
+
+- (void)dealloc {
+    NSLog(@"👉 dealloc");
 }
 
 - (void)setPhotonTransitionDelegate:(id<UIViewControllerTransitioningDelegate>)photonTransitionDelegate {
@@ -216,7 +225,7 @@ static CGFloat const TablePadding = 6;
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     if (section > 0) {
-        return [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"SeparatorSectionHeader"];
+        return [tableView dequeueReusableHeaderFooterViewWithIdentifier:PHOTONACTIONSHEET_IDENTIFIER_SEPARATORSECTIONHEADER];
     }
     
     if (self.title) {
@@ -226,9 +235,9 @@ static CGFloat const TablePadding = 6;
         return header;
     }
     
-    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"EmptyHeader"];
+    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:PHOTONACTIONSHEET_IDENTIFIER_EMPTYHEADER];
     if (view) {
-        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        [view mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(1);
         }];
     }
@@ -237,9 +246,9 @@ static CGFloat const TablePadding = 6;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    UIView *view = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:@"EmptyHeader"];
+    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:PHOTONACTIONSHEET_IDENTIFIER_EMPTYHEADER];
     if (view) {
-        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        [view mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(1);
         }];
     }
@@ -282,8 +291,8 @@ static CGFloat const TablePadding = 6;
         _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
         [_tableView registerClass:[PhotonActionSheetCell class] forCellReuseIdentifier:CellName];
         [_tableView registerClass:[PhotonActionSheetTitleHeaderView class] forHeaderFooterViewReuseIdentifier:TitleHeaderName];
-        [_tableView registerClass:[PhotonActionSheetSeparator class] forHeaderFooterViewReuseIdentifier:@"SeparatorSectionHeader"];
-        [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"EmptyHeader"];
+        [_tableView registerClass:[PhotonActionSheetSeparator class] forHeaderFooterViewReuseIdentifier:PHOTONACTIONSHEET_IDENTIFIER_SEPARATORSECTIONHEADER];
+        [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:PHOTONACTIONSHEET_IDENTIFIER_EMPTYHEADER];
         _tableView.estimatedRowHeight = RowHeight;
         _tableView.estimatedSectionFooterHeight = HeaderFooterHeight;
         _tableView.estimatedSectionHeaderHeight = HeaderFooterHeight;
@@ -293,9 +302,10 @@ static CGFloat const TablePadding = 6;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.cellLayoutMarginsFollowReadableWidth = NO;
         _tableView.accessibilityIdentifier = @"Context Menu";
-        UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, Padding)];
-        _tableView.tableHeaderView = footer;
-        _tableView.tableFooterView = footer;
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _tableView.frame.size.width, Padding)];
+//        view.backgroundColor = [UIColor redColor];
+        _tableView.tableHeaderView = view;
+        _tableView.tableFooterView = view;
     }
     
     return _tableView;
@@ -315,14 +325,14 @@ static CGFloat const TablePadding = 6;
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if (self) {
-        CGFloat Padding = 12;
+        CGFloat padding = 12;
         
         self.backgroundView = [[UIView alloc] init];
         self.backgroundView.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:self.titleLabel];
         
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.contentView).offset(Padding);
+            make.leading.equalTo(self.contentView).offset(padding);
             make.trailing.equalTo(self.contentView);
             make.top.equalTo(self.contentView).offset(TablePadding);
         }];
