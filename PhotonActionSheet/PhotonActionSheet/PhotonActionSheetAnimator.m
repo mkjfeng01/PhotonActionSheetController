@@ -43,7 +43,7 @@ static CGFloat const AnimationDuration = 0.4;
     [self animateWithViewController:actionSheet PresentinViewController:bottom transitionContext:transitionContext];
 }
 
-- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
     return AnimationDuration;
 }
 
@@ -53,7 +53,7 @@ static CGFloat const AnimationDuration = 0.4;
     return self;
 }
 
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     _presenting = NO;
     
     return self;
@@ -61,6 +61,8 @@ static CGFloat const AnimationDuration = 0.4;
 
 - (void)animateWithViewController:(PhotonActionSheet *)actionSheet PresentinViewController:(UIViewController *)viewController transitionContext:(id<UIViewControllerContextTransitioning>)transitionContext {
     UIView *containerView = transitionContext.containerView;
+    
+    NSLog(@"😳");
     
     if (self.presenting) {
         self.shadow.frame = containerView.bounds;

@@ -207,11 +207,27 @@ static CGFloat const TablePadding = 6;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     PhotonActionSheetItem *action = self.actions[indexPath.section][indexPath.row];
-    if (action.handler) {
-        action.handler(action);
+    if (!action.handler) {
+        [self dismiss];
+        return;
     }
     
-    [self dismiss];
+    if (action.accessory == PhotonActionCellAccessorySwitch) {
+        UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle:UIImpactFeedbackStyleMedium];
+        [generator impactOccurred];
+        action.isEnabled = !action.isEnabled;
+        NSMutableArray *row = [NSMutableArray arrayWithArray:_actions[indexPath.section]];
+        [row replaceObjectAtIndex:indexPath.row withObject:action];
+        NSMutableArray *section = [NSMutableArray arrayWithArray:self.actions];
+        [section replaceObjectAtIndex:indexPath.section withObject:row];
+        self.actions = [section copy];
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self.tableView reloadData];
+    } else {
+        [self dismiss];
+    }
+    
+    action.handler(action);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

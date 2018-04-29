@@ -23,7 +23,7 @@
 - (IBAction)show:(id)sender {
     
     PhotonActionSheetItem *first = [[PhotonActionSheetItem alloc] initWithTitle:@"1" text:nil iconString:@"menu-panel-TopSites" isEnabled:NO accessory:PhotonActionCellAccessoryNone accessoryText:nil bold:NO handler:^(PhotonActionSheetItem *item) {
-        
+        NSLog(@"%@", item.title);
     }];
     PhotonActionSheetItem *second = [[PhotonActionSheetItem alloc] initWithTitle:@"2" text:nil iconString:@"menu-panel-Bookmarks" isEnabled:NO accessory:PhotonActionCellAccessoryNone accessoryText:nil bold:NO handler:^(PhotonActionSheetItem *item) {
         
@@ -37,11 +37,11 @@
     
     PhotonActionSheetController *control = [[PhotonActionSheetController alloc] init];
     
-    [control presentSheetWithTitle:nil actions:@[@[first, second, third], @[forth]] on:self from:self.view supressPopover:NO];
+    [control presentSheetWithTitle:nil actions:@[@[first, second], @[third, forth]] on:self from:self.view supressPopover:NO];
 }
 
 - (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController {
-    
+    NSLog(@"..");
 }
 
 @end

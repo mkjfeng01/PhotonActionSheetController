@@ -19,14 +19,14 @@
     sheet.modalPresentationStyle = (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad && !supressPopover) ? UIModalPresentationPopover : UIModalPresentationOverCurrentContext;
     sheet.photonTransitionDelegate = animator;
     
-    UIPopoverPresentationController *popover = sheet.popoverPresentationController;
-    if (popover && sheet.modalPresentationStyle == UIModalPresentationPopover) {
-        popover.delegate = onViewController;
-        popover.sourceView = fromView;
-        popover.sourceRect = CGRectMake(fromView.frame.size.width/2, fromView.frame.size.height*0.75, 1, 1);
-        popover.permittedArrowDirections = UIPopoverArrowDirectionUp;
-        popover.backgroundColor = [[UIColor colorWithHex:0xf9f9fa] colorWithAlphaComponent:0.7];
-    }
+//    UIPopoverPresentationController *popover = sheet.popoverPresentationController;
+//    if (popover && sheet.modalPresentationStyle == UIModalPresentationPopover) {
+//        popover.delegate = onViewController;
+//        popover.sourceView = fromView;
+//        popover.sourceRect = CGRectMake(fromView.frame.size.width/2, fromView.frame.size.height*0.75, 1, 1);
+//        popover.permittedArrowDirections = UIPopoverArrowDirectionUp;
+//        popover.backgroundColor = [[UIColor colorWithHex:0xf9f9fa] colorWithAlphaComponent:0.7];
+//    }
     
     [onViewController presentViewController:sheet animated:YES completion:nil];
 }

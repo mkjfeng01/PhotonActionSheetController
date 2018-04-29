@@ -20,70 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotonActionSheet/PhotonActionSheet/PhotonActionSheetAnimator.m"
-            timestampString = "546420372.572358"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "-animateWithViewController:PresentinViewController:transitionContext:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PhotonActionSheetAnimator animateWithViewController:PresentinViewController:transitionContext:]"
-                  moduleName = "PhotonActionSheet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bluestone/Documents/ObjC/PhotonActionSheet/PhotonActionSheet/PhotonActionSheet/PhotonActionSheetAnimator.m"
-                  timestampString = "546580486.102622"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "1727">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__97-[PhotonActionSheetAnimator animateWithViewController:PresentinViewController:transitionContext:]_block_invoke.46"
-                  moduleName = "PhotonActionSheet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bluestone/Documents/ObjC/PhotonActionSheet/PhotonActionSheet/PhotonActionSheet/PhotonActionSheetAnimator.m"
-                  timestampString = "546580486.10478"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "15">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.48"
-                  moduleName = "PhotonActionSheet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bluestone/Documents/ObjC/PhotonActionSheet/PhotonActionSheet/PhotonActionSheet/PhotonActionSheetAnimator.m"
-                  timestampString = "546580486.106485"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotonActionSheet/PhotonActionSheet/PhotonActionSheetAnimator.m"
-            timestampString = "546420372.738055"
+            timestampString = "546693213.633159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -99,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotonActionSheet/PhotonActionSheet/PhotonActionSheetAnimator.m"
-            timestampString = "546420372.738134"
+            timestampString = "546693213.633305"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -115,12 +52,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotonActionSheet/PhotonActionSheet/PhotonActionSheetAnimator.m"
-            timestampString = "546420372.738216"
+            timestampString = "546693213.633404"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
             landmarkName = "-animationControllerForDismissedController:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotonActionSheet/ViewController.m"
+            timestampString = "546693213.633496"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "-popoverPresentationControllerDidDismissPopover:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
