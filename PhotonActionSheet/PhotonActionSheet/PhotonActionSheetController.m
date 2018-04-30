@@ -23,9 +23,7 @@ static CGFloat const MaxWidth = 414;
 static CGFloat const Padding = 10;
 static CGFloat const HeaderFooterHeight = 20;
 static CGFloat const RowHeight = 50;
-static UIColor * BorderColor = nil;
 static CGFloat const CornerRadius = 10;
-static CGSize IconSize;
 static NSString * const SiteHeaderName = @"PhotonActionSheetSiteHeaderView";
 static NSString * const TitleHeaderName = @"PhotonActionSheetTitleHeaderView";
 static NSString * const CellName = @"PhotonActionSheetCell";
@@ -73,11 +71,6 @@ static CGFloat const TablePadding = 6;
 @end
 
 @implementation PhotonActionSheetController
-
-+ (void)load {
-    BorderColor = [UIColor colorWithWhite:0 alpha:0.1];
-    IconSize = CGSizeMake(24, 24);
-}
 
 + (instancetype)sheetControllerWithTitle:(NSString *)title actions:(NSArray<NSArray<PhotonActionSheetItem *> *> *)actions supressPopover:(BOOL)supressPopover {
     PhotonActionSheetController *sheet = [[PhotonActionSheetController alloc] initWithTitle:title actions:actions];
