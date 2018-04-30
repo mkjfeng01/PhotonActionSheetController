@@ -16,11 +16,9 @@
 		DA4D35DB20900C0900F258A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35DA20900C0900F258A6 /* main.m */; };
 		DA4D35E520900C0900F258A6 /* PhotonActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35E420900C0900F258A6 /* PhotonActionSheetTests.m */; };
 		DA4D35F020900C0A00F258A6 /* PhotonActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35EF20900C0A00F258A6 /* PhotonActionSheetUITests.m */; };
-		DA4D360020900D5A00F258A6 /* PhotonActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35FF20900D5A00F258A6 /* PhotonActionSheet.m */; };
-		DA4D360620900DAF00F258A6 /* PhotonActionSheetAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D360520900DAF00F258A6 /* PhotonActionSheetAnimator.m */; };
+		DA4D360020900D5A00F258A6 /* PhotonActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D35FF20900D5A00F258A6 /* PhotonActionSheetController.m */; };
 		DA4D36B9209098E900F258A6 /* UIColor+PhotonActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D36B6209098E900F258A6 /* UIColor+PhotonActionSheet.m */; };
 		DA4D36BA209098E900F258A6 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D36B8209098E900F258A6 /* UIImage+ImageEffects.m */; };
-		DA4D36BD209152FA00F258A6 /* PhotonActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4D36BC209152FA00F258A6 /* PhotonActionSheetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,16 +58,12 @@
 		DA4D35EB20900C0A00F258A6 /* PhotonActionSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotonActionSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4D35EF20900C0A00F258A6 /* PhotonActionSheetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetUITests.m; sourceTree = "<group>"; };
 		DA4D35F120900C0A00F258A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4D35FE20900D5A00F258A6 /* PhotonActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotonActionSheet.h; sourceTree = "<group>"; };
-		DA4D35FF20900D5A00F258A6 /* PhotonActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheet.m; sourceTree = "<group>"; };
-		DA4D360420900DAF00F258A6 /* PhotonActionSheetAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotonActionSheetAnimator.h; sourceTree = "<group>"; };
-		DA4D360520900DAF00F258A6 /* PhotonActionSheetAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetAnimator.m; sourceTree = "<group>"; };
+		DA4D35FE20900D5A00F258A6 /* PhotonActionSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotonActionSheetController.h; sourceTree = "<group>"; };
+		DA4D35FF20900D5A00F258A6 /* PhotonActionSheetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetController.m; sourceTree = "<group>"; };
 		DA4D36B5209098E900F258A6 /* UIColor+PhotonActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PhotonActionSheet.h"; sourceTree = "<group>"; };
 		DA4D36B6209098E900F258A6 /* UIColor+PhotonActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PhotonActionSheet.m"; sourceTree = "<group>"; };
 		DA4D36B7209098E900F258A6 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		DA4D36B8209098E900F258A6 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		DA4D36BB209152FA00F258A6 /* PhotonActionSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotonActionSheetController.h; sourceTree = "<group>"; };
-		DA4D36BC209152FA00F258A6 /* PhotonActionSheetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotonActionSheetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +169,8 @@
 		DA4D35FD20900C3E00F258A6 /* PhotonActionSheet */ = {
 			isa = PBXGroup;
 			children = (
-				DA4D36BB209152FA00F258A6 /* PhotonActionSheetController.h */,
-				DA4D36BC209152FA00F258A6 /* PhotonActionSheetController.m */,
-				DA4D35FE20900D5A00F258A6 /* PhotonActionSheet.h */,
-				DA4D35FF20900D5A00F258A6 /* PhotonActionSheet.m */,
-				DA4D360420900DAF00F258A6 /* PhotonActionSheetAnimator.h */,
-				DA4D360520900DAF00F258A6 /* PhotonActionSheetAnimator.m */,
+				DA4D35FE20900D5A00F258A6 /* PhotonActionSheetController.h */,
+				DA4D35FF20900D5A00F258A6 /* PhotonActionSheetController.m */,
 				DA4D36B4209098E900F258A6 /* Category */,
 			);
 			path = PhotonActionSheet;
@@ -384,10 +374,8 @@
 				DA4D35D020900BFD00F258A6 /* ViewController.m in Sources */,
 				DA4D36B9209098E900F258A6 /* UIColor+PhotonActionSheet.m in Sources */,
 				DA4D36BA209098E900F258A6 /* UIImage+ImageEffects.m in Sources */,
-				DA4D36BD209152FA00F258A6 /* PhotonActionSheetController.m in Sources */,
-				DA4D360020900D5A00F258A6 /* PhotonActionSheet.m in Sources */,
+				DA4D360020900D5A00F258A6 /* PhotonActionSheetController.m in Sources */,
 				DA4D35DB20900C0900F258A6 /* main.m in Sources */,
-				DA4D360620900DAF00F258A6 /* PhotonActionSheetAnimator.m in Sources */,
 				DA4D35CD20900BFD00F258A6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

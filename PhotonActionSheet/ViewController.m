@@ -7,10 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "PhotonActionSheet.h"
 #import "PhotonActionSheetController.h"
 
-@interface ViewController () <UIPopoverPresentationControllerDelegate>
+@interface ViewController ()
 
 @end
 
@@ -18,10 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 }
 
 - (IBAction)show:(id)sender {
-    
     PhotonActionSheetItem *first = [[PhotonActionSheetItem alloc] initWithTitle:@"1" text:nil iconString:@"menu-panel-TopSites" isEnabled:NO accessory:PhotonActionCellAccessoryNone accessoryText:nil bold:NO handler:^(PhotonActionSheetItem *item) {
         NSLog(@"%@", item.title);
     }];
@@ -35,13 +34,9 @@
         
     }];
     
-    PhotonActionSheetController *control = [[PhotonActionSheetController alloc] init];
+    PhotonActionSheetController *sheet = [PhotonActionSheetController sheetControllerWithTitle:nil actions:@[@[first, second], @[third, forth]] supressPopover:YES];
     
-    [control presentSheetWithTitle:nil actions:@[@[first, second], @[third, forth]] on:self from:self.view supressPopover:NO];
-}
-
-- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController {
-    NSLog(@"..");
+    [self presentViewController:sheet animated:YES completion:nil];
 }
 
 @end
